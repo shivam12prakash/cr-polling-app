@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Polling App for Class Representative</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="img/cusat.png"
+        style="height: 40%; width: 80%; margin-left: 10%"
+      />
+      <h4
+        style="
+          font-family: 'Times New Roman', Times, serif;
+          text-align: center;
+          font-weight: bolder;
+        "
+      >
+        DEPARTMENT OF INFORMATION TECHNOLOGY
+      </h4>
+      <br />
+      <h3 style="font-family: Helvetica; color: green">
+        CLASS REPRESENTATIVE(CR) VOTING
+      </h3>
+      <br />
+      <h4>Cast Your Vote for your Favourite <br />Class Representative</h4>
+      <img
+        src="img/leader.jpg"
+        style="height: 40%; width: 40%; margin-left: 30%"
+      />
+      <form id="vote-form">
+        <div>
+          <p>
+            <input
+              style="position: relative; opacity: 1"
+              type="radio"
+              name="party"
+              id="abvp"
+              value="ABVP"
+            />
+            <label for="abvp" style="font-size: 150%">ABVP</label>
+          </p>
+          <p>
+            <input
+              style="position: relative; opacity: 1"
+              type="radio"
+              name="party"
+              id="sfi"
+              value="SFI"
+            />
+            <label for="sfi" style="font-size: 150%">SFI</label>
+          </p>
+          <p>
+            <input
+              style="position: relative; opacity: 1"
+              type="radio"
+              name="party"
+              id="ksu"
+              value="KSU"
+            />
+            <label for="ksu" style="font-size: 150%">KSU</label>
+          </p>
+          <p>
+            <input
+              style="position: relative; opacity: 1"
+              type="radio"
+              name="party"
+              id="msm"
+              value="MSM"
+            />
+            <label for="msm" style="font-size: 150%">MSM</label>
+          </p>
+        </div>
+        <input
+          style="background-color: green"
+          type="submit"
+          value="Cast"
+          onClick="alert('Hey!!! Thanks for Voting')"
+          class="btn"
+        />
+      </form>
+
+      <br /><br />
+
+      <div id="chartContainer" style="height: 400px; width: 100%"></div>
+      <button
+        id="myButton"
+        onclick="location.href = 'Bye.html;'"
+        style="
+          background-color: orange;
+          border: none;
+          margin-left: 340px;
+          margin-top: 20px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        "
+        type="button"
+      >
+        Thanks For Voting
+      </button>
+
+      <br />
+      <br />
+      <br />
+      <hr
+        style="
+          height: 2px;
+          border-width: 0;
+          color: lightgray;
+          background-color: lightgray;
+        "
+      />
+      <br />
+      <footer style="text-align: center; color: grey; font-size: large">
+        © Copyright 2018-2022 by Shivam Prakash,All Rights Reserved
+      </footer>
+    </div>
+    <script type="text/javascript">
+      document.getElementById("myButton").onclick = function () {
+        location.href = "Bye.html";
+      };
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.0.3/pusher.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src="ourjs.js"></script>
+  </body>
+</html>
